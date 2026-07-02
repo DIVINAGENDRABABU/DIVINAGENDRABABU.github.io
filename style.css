@@ -1,0 +1,128 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #1e293b;
+  position: sticky;
+  top: 0;
+}
+
+.nav-links { display: flex; list-style: none; gap: 20px; }
+.nav-links a { color: #e2e8f0; text-decoration: none; }
+.nav-links a:hover { color: #38bdf8; }
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero h1 { font-size: 3rem; }
+.hero p { font-size: 1.2rem; color: #94a3b8; margin: 10px 0 30px; }
+
+.btn {
+  background: #38bdf8;
+  color: #0f172a;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section { padding: 60px 40px; max-width: 900px; margin: auto; }
+section h2 { margin-bottom: 20px; color: #38bdf8; }
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.skills-grid span {
+  background: #1e293b;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.project-cards { display: flex; flex-wrap: wrap; gap: 20px; }
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 250px;
+}
+.card a { color: #38bdf8; }
+
+#experience ul { list-style: none; }
+#experience li {
+  background: #1e293b;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+#contact a { color: #38bdf8; text-decoration: none; }
+.bg-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.5;
+  animation: float 12s ease-in-out infinite;
+}
+
+.orb1 {
+  width: 350px;
+  height: 350px;
+  background: #38bdf8;
+  top: 10%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.orb2 {
+  width: 300px;
+  height: 300px;
+  background: #a855f7;
+  top: 50%;
+  left: 70%;
+  animation-delay: 3s;
+}
+
+.orb3 {
+  width: 250px;
+  height: 250px;
+  background: #22d3ee;
+  top: 75%;
+  left: 20%;
+  animation-delay: 6s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(50px, -40px) scale(1.1); }
+  66% { transform: translate(-30px, 30px) scale(0.9); }
+}
