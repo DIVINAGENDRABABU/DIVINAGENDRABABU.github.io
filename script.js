@@ -38,7 +38,6 @@ function drawParticles() {
     ctx.fill();
   });
 
-  // Draw connecting lines between nearby particles
   for (let i = 0; i < particles.length; i++) {
     for (let j = i + 1; j < particles.length; j++) {
       const dx = particles[i].x - particles[j].x;
@@ -58,8 +57,8 @@ function drawParticles() {
 
   requestAnimationFrame(drawParticles);
 }
-
 drawParticles();
+
 // Highlight active nav link on scroll
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-links a");
